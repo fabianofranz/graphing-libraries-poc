@@ -99,7 +99,7 @@ $(document).ready(function() {
   $("#sparkline8").sparkline("html", { type: "pie", sliceColors: ['#cc6666', "#81BCE6"], height: "28px", width: "34px" }); 
   $("#sparkline9").sparkline("html", { type: "pie", sliceColors: ['#cc6666', "#81BCE6"], height: "28px", width: "34px" }); 
 
-   chart3 = $.jqplot('chart3', [[1]], {
+   chart3 = $.jqplot('chart3', [[0]], {
    	  grid: { background: "transparent" },
        seriesDefaults: {
            renderer: $.jqplot.MeterGaugeRenderer,
@@ -109,6 +109,13 @@ $(document).ready(function() {
            }
        }
    });
+
+  window.setInterval(function() {
+    //alert(chart3.series[0].data[0][0]);
+    chart3.series[0].data[0][0] = chart3.series[0].data[0][0] > 4.0 ? 0.0 : parseFloat(chart3.series[0].data[0][0]) + 0.1;
+    chart3.series[0].data[0][1] = chart3.series[0].data[0][1] > 4.0 ? 0.0 : parseFloat(chart3.series[0].data[0][1]) + 0.1;
+    chart3.replot();
+  }, 200);
 
   plot1 = $.jqplot("chart2", [s2, s1], {
       // Turns on animatino for all series in this plot.
