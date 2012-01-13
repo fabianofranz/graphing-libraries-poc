@@ -220,7 +220,7 @@ h3 { font-size: 200%; }
 
 #container { margin-left: auto; margin-right: auto; width:960px; }
 
-#charter1, #charter2 { 
+#charter1, #charter2, #charter4 { 
   background: #eee; 
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -230,13 +230,13 @@ h3 { font-size: 200%; }
   margin-top: 20px;
 }
 
-#charter2 { margin-top: 40px; }
+#charter2, #charter4 { margin-top: 40px; }
  
 div.sparkline { padding: 5px 0; font-size: 200%; letter-spacing: -3px; font-weight: bold; }
 div.sparklines { float: left; margin-right: 40px; }
 div.inline { float: left; }
 
-
+footer { height: 60px; }
 
 
 
