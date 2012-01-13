@@ -236,6 +236,8 @@ div.sparkline { padding: 5px 0; font-size: 200%; letter-spacing: -3px; font-weig
 div.sparklines { float: left; margin-right: 40px; }
 div.inline { float: left; }
 
+em { font: italic 100% "Palatino","Hoefler Text", serif; }
+
 footer { height: 60px; }
 
 

@@ -94,7 +94,10 @@ $(document).ready(function() {
 	$("#sparkline3").sparkline("html", { type: "line" }); 
 	$("#sparkline4").sparkline("html", { type: "bar", barColor: "#81BCE6" }); 
 	$("#sparkline5").sparkline("html", { type: "bar", barColor: "#81BCE6" }); 
-	$("#sparkline6").sparkline("html", { type: "pie", sliceColors: ['#cc6666', "#81BCE6"], height: "28px", width: "34px" }); 
+  $("#sparkline6").sparkline("html", { type: "bar", barColor: "#81BCE6" }); 
+	$("#sparkline7").sparkline("html", { type: "pie", sliceColors: ['#cc6666', "#81BCE6"], height: "28px", width: "34px" }); 
+  $("#sparkline8").sparkline("html", { type: "pie", sliceColors: ['#cc6666', "#81BCE6"], height: "28px", width: "34px" }); 
+  $("#sparkline9").sparkline("html", { type: "pie", sliceColors: ['#cc6666', "#81BCE6"], height: "28px", width: "34px" }); 
 
    chart3 = $.jqplot('chart3', [[1]], {
    	  grid: { background: "transparent" },
